@@ -3,10 +3,10 @@ import theme from "./theme";
 
 export default defineUserConfig({
   lang: "zh-CN",
-  title: "主题演示",
-  description: "vuepress-theme-hope 的演示",
+  title: "Pointer",
+  description: "Pointer-的个人博客",
 
-  base: "/",
+  base: "/MyBold/",
 
   theme,
 });
