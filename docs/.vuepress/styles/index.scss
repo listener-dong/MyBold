@@ -1,0 +1,13 @@
+.page{
+    .blog-hero.fullscreen{
+        .mask {
+            background-position-y: bottom !important;       
+        }
+        h1{
+            color: var(--text-color);
+        }
+        .description{
+            color: var(--dark-grey);
+        }
+    }
+}

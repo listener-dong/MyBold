@@ -6,7 +6,7 @@ export default hopeTheme({
   hostname: "https://vuepress-theme-hope-v2-demo.mrhope.site",
 
   author: {
-    name: "Mr.Hope",
+    name: "Mr.Pointer",
     url: "https://mrhope.site",
   },
 
@@ -31,8 +31,8 @@ export default hopeTheme({
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
 
   blog: {
-    description: "一个前端开发者",
-    intro: "/intro.html",
+    description: "一个大龄开发者",
+    intro: "/",
     medias: {
       Baidu: "https://example.com",
       Bitbucket: "https://example.com",

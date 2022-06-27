@@ -4,9 +4,10 @@ layout: Blog
 icon: home
 title: 博客主页
 heroImage: /logo.svg
-heroText: 你博客的名称
+heroText: Pointer-个人博客
+bgImage: /bg.jpeg
 heroFullScreen: true
-tagline: 你可以在这里放置你的口号与标语
+tagline: 记录生活中的点点滴滴
 projects:
   - icon: project
     name: 项目名称
