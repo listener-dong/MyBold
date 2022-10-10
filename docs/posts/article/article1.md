@@ -416,4 +416,4 @@ export default ({ command }: ConfigEnv): UserConfigExport => {
    ```
 
 ### 5.开源的项目框架
-* https://github.com/xiaoxian521/pure-admin-thin
+  1. https://github.com/xiaoxian521/pure-admin-thin
