@@ -96,7 +96,7 @@ export default ({ command }: ConfigEnv): UserConfigExport => {
 2. 在项目中安装`eslint`插件
 
    ```
-   npm install --save-dev eslint eslint-plugin-vue
+   pnpm install --save-dev eslint eslint-plugin-vue
    ```
 
 3. 在项目中初始化`eslint`
