@@ -3,11 +3,11 @@ import navbar from "./navbar";
 import sidebar from "./sidebar";
 
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-v2-demo.mrhope.site",
+  hostname: "https://listener-dong.github.io/MyBold/",
 
   author: {
     name: "Mr.Pointer",
-    url: "https://mrhope.site",
+    url: "https://github.com/listener-dong",
   },
 
   iconAssets: "iconfont",
@@ -68,7 +68,7 @@ export default hopeTheme({
 
   encrypt: {
     config: {
-      "/guide/encrypt.html": ["1234"],
+      "/guide/encrypt.html": ["qing100531"],
     },
   },
 
