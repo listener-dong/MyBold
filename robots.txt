@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://vuepress-theme-hope-v2-demo.mrhope.site/MyBold/sitemap.xml
+Sitemap: https://listener-dong.github.io/MyBold/MyBold/sitemap.xml
