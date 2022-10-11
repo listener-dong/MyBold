@@ -2,7 +2,7 @@
 icon: edit
 date: 2022-10-11
 category:
-  - CategoryA
+  - Git
 tag:
   - git
   - github
