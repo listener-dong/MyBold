@@ -2,7 +2,7 @@
 icon: edit
 date: 2022-10-11
 category:
-  - Git
+  - 前段开发规范
 tag:
   - git
   - github

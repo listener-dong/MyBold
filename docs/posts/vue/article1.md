@@ -2,7 +2,7 @@
 icon: edit
 date: 2022-10-10
 category:
-  - Vue
+  - 前端
 tag:
   - vue3
   - vite
