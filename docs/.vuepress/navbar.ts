@@ -13,19 +13,13 @@ export default navbar([
         text: "前端",
         icon: "edit",
         prefix: "vue/",
-        children: [
-          "article1",
-          "article9",
-        ],
+        children: ["vue3_vite", "article9"],
       },
       {
         text: "前端规范",
         icon: "edit",
         prefix: "standard/",
-        children: [
-          "article2",
-          "article3",
-        ],
+        children: ["article2", "article3"],
       },
       { text: "文章 9", icon: "edit", link: "vue/article9" },
       "article11",
