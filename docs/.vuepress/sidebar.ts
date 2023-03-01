@@ -32,7 +32,7 @@ export default sidebar([
         text: "Git",
         icon: "edit",
         prefix: "git/",
-        children: ["base"],
+        children: ["常用命令", "本地仓库推送到远程"],
       },
     ],
   },
