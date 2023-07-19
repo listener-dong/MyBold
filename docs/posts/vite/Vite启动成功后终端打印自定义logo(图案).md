@@ -9,13 +9,16 @@ tag:
 
 # Vite启动成功后终端打印自定义logo(图案)
 
+## 1. 安装依赖 🔨🔨🔨🔨
 
-### 1. 安装依赖 🔨🔨🔨🔨
 这里会用一个插件，picocolors，它是一个可以修改终端输出字符颜色的 npm 包。
+
 ```sh
 yarn add picocolors
 ```
-### 2. 新建`build/info.ts`文件🔨🔨🔨🔨
+
+## 2. 新建`build/info.ts`文件🔨🔨🔨🔨
+
 ```ts
 import type { Plugin } from "vite";
 import dayjs, { Dayjs } from "dayjs";
@@ -72,7 +75,9 @@ export function viteBuildInfo(): Plugin {
 }
 
 ```
-### 3. `vite.config.ts`中引入刚刚写好的插件🔨🔨🔨🔨
+
+## 3. `vite.config.ts`中引入刚刚写好的插件🔨🔨🔨🔨
+
 ```ts
 import { defineConfig } from 'vite'
 import path from 'path'
@@ -90,7 +95,7 @@ export default defineConfig({
   plugins: [
     vue(),
     vitePluginStart(),
-	vitesStartInfo(),
+ vitesStartInfo(),
     viteBuildInfo()
   ],
   server: {
@@ -101,6 +106,8 @@ export default defineConfig({
   }
 })
 ```
-### 4. 最终效果浏览 💥 ✨ ⭐️ 🌟 💥
-<img :src="$withBase('/imgs/vite_console_1.png')" alt="vite_console">
-<img :src="$withBase('/imgs/vite_console_2.jpg')" alt="vite_console">
+
+## 4. 最终效果浏览 💥 ✨ ⭐️ 🌟 💥
+
+![Cat](/imgs/vite_console_1.png)
+![Cat](/imgs/vite_console_2.jpg)
