@@ -30,21 +30,24 @@ npx husky add .husky/commit-msg
 <img :src="$withBase('/imgs/husky.png')" alt="husky">
 
 * 在`commit-msg`文件中添加 `npm run commitlint`
+
   ```shell
   #!/usr/bin/env sh
   . "$(dirname -- "$0")/_/husky.sh"
   npm run commitlint
   ```
+
 >在`pre-commit`文件中有个`npm run test`我们先注释掉，不然会报错。
 
-
 ## 安装commitlint
+
 ```shell
 # 添加依赖文件
 pnpm install @commitlint/config-conventional @commitlint/cli -D
 ```
 
 * 添加配置文件，新建`commitlint.config.cjs`，然后添加下面的代码：
+
 ```shell
 module.exports = {
   extends: ['@commitlint/config-conventional'],
@@ -80,6 +83,7 @@ module.exports = {
 ## 配置scripts
 
 * 因为我们需要运行`npm run commitlint`，所以需要在`package.json`文件中添加如下代码：
+
   ```shell
   # 在scrips中添加下面的代码
   {
@@ -93,6 +97,7 @@ module.exports = {
 ## 配置完成
 
 * 配置结束，现在当我们填写`commit`信息的时候，前面就需要带着下面的`subject`
+
   ```shell
   "feat", // 新增
   "fix", // 修复
@@ -121,7 +126,8 @@ module.exports = {
 * 由于添加了commitlint验证，对于不熟悉提交规范的新手同学会有一定影响，可以添加 commitizen 工具，手动生成规范化commit。
 
 * Commitizen是一个格式化commit message的工具。
-* 
+*
+
 ```shell
 # 工具安装
 yarn add -D commitizen
@@ -130,7 +136,8 @@ yarn add -D commitizen
 ### 1.使用官方：cz-conventional-changelog
 
 * 安装工具
-* 
+*
+
 ```shell
 yarn add cz-conventional-changelog -D
 ```
@@ -144,19 +151,23 @@ yarn add cz-conventional-changelog -D
 ```
 
 * 在package.json 中添加定义commitizen使用规则，
+
 ```shell
 {
-	"config": {
+ "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
 }
 ```
-* 当执行git commit的时候，就可以提示我们填写代码规则了 
+
+* 当执行git commit的时候，就可以提示我们填写代码规则了
 
 ### 2.自定义 commitizen 规则
+
 * 使用 cz-customizable 工具
+
 ```shell
 # 安装依赖
 yarn add cz-customizable -D
@@ -167,6 +178,7 @@ yarn add cz-customizable -D
 ```
 
 * 在package.json 中添加自定义commitizen，使用git-cz执行git commit命令
+
 ```shell
 "config": {
     "commitizen": {
@@ -176,6 +188,7 @@ yarn add cz-customizable -D
 ```
 
 * 在根目录创建的.cz-config.js, 自定义commit提示内容
+
 ```shell
 module.exports = {
   types: [
@@ -213,4 +226,5 @@ module.exports = {
   subjectLimit: 72
 }
 ```
+
 * 当我们提交代码的时候，需要先git add .，然后执行npm run commit,就可以根据响应的提示填写commit信息 了
